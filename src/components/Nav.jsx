@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.css";
 
 let Nav = () => {
     const [activeBool, setActiveBool] = React.useState(true)
