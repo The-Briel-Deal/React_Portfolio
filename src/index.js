@@ -16,11 +16,11 @@ const avatar = <img id="avatar_of_me" src={require('./avatar.png')} alt="Avatar 
 ReactDom.render(
     <div>
         {nav}
-        <DrawMain 
-        titleText={titleText}
-        subtitleText= {subtitleText} 
-        socialBlock = {socialBlock}
-        avatar = {avatar}
+        <DrawMain
+            titleText={titleText}
+            subtitleText={subtitleText}
+            socialBlock={socialBlock}
+            avatar={avatar}
         />
         <SectionTwo />
         <Footer />
