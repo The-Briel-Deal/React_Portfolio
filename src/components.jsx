@@ -87,5 +87,8 @@ let SectionTwo = (props)=>{
 
 </section>
 }
+let Footer = ()=>{
+    return <footer>I'm a footer!</footer>
+}
 
-export {DrawMain, SectionTwo, }
+export {DrawMain, SectionTwo, Footer,}

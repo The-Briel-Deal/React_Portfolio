@@ -4,7 +4,7 @@ import "./index.css";
 let nav = (<nav className="navbar is-dark is-transparent is-active" role="navigation" aria-label="main navigation">
 <div className="navbar-brand">
     <a className="navbar-item" href="/">
-        <img src="./LogoNoText.png" />
+        <img src="./LogoNoText.png" alt=""/>
     </a>
 
     <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">

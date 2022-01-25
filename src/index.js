@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 import nav from "./nav";
-import { DrawMain, SectionTwo } from "./components";
+import { DrawMain, SectionTwo, Footer, } from "./components";
 import FA from 'react-fontawesome'
 import './index.css'
 
@@ -23,6 +23,7 @@ ReactDom.render(
         avatar = {avatar}
         />
         <SectionTwo />
+        <Footer />
     </div>,
     document.getElementById("root")
 )
