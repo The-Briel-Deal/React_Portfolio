@@ -1,18 +1,33 @@
 import React from "react";
-
+import { motion, useMotionValue } from "framer-motion";
 let Nav = () => {
     const [activeBool, setActiveBool] = React.useState(true)
     const [active, setActive] = React.useState("");
+    const buttonStyle = {
+        backgroundColor: "transparent",
+    }
     return (<nav className="navbar is-dark is-transparent is-active" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-            <a className="navbar-item" href="/">
-                <img src="./LogoNoText.png" alt="" />
-            </a>
+            <motion.a
+                whileHover={{ scale: 1.4 }}
+                whileTap={{ scale: 0.9 }}
+                className="navbar-item"
+                style={buttonStyle}
+                href="/">
 
-            <button role="button" className={'navbar-burger ' + active} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={
-                () => {
+                <img src={require('../assets/LogoNoText.png')} alt="FordLTC Logo" />
+            </motion.a>
 
-
+            <motion.button
+                whileHover={{ scale: 1.4 }}
+                whileTap={{ scale: 0.9 }}
+                role="button"
+                style={buttonStyle}
+                className={'navbar-burger ' + active}
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navbarBasicExample"
+                onClick={() => {
                     if (activeBool) {
                         setActive("is-active")
                     }
@@ -20,12 +35,11 @@ let Nav = () => {
                         setActive("")
                     }
                     setActiveBool(!activeBool);
-                }
-            } >
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </button>
+                }}>
+                <span aria-hidden="false"></span>
+                <span aria-hidden="false"></span>
+                <span aria-hidden="false"></span>
+            </motion.button>
         </div>
 
         <div id="navbarBasicExample" className={'navbar-menu ' + active}>
