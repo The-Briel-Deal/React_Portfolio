@@ -5,7 +5,7 @@ import Head from '../components/Head';
 
 const titleText = <span>I'm certified.</span>
 const subtitleText = <span>I've aquired the following industry <strong>certifications</strong> in the time I've worked in IT.</span>
-const avatar = <i className="fas fa-stamp"></i>
+const avatar = <i className="fas fa-stamp" />
 
 
 const Credentials = () => {

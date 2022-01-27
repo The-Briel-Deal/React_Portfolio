@@ -1,5 +1,6 @@
 import React from "react";
-import { motion, AnimatePresence} from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import AnimatedPage from "../animations/AnimatedPage";
 let Head = (props) => {
     return <section className="section1">
         <div className="container has-text-centered">
@@ -10,11 +11,14 @@ let Head = (props) => {
                 {props.subtitleText}
             </p>
             <div><AnimatePresence>
-                <motion.div 
-                initial={{opacity: 0}} 
-                animate={{opacity: 1}} 
-                exit={{opacity: 0}}
-                transition={{duration: 2}}>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: .9 }}
+                    whileHover={{
+                        y: 20
+                    }}>
                     {props.avatar}
                 </motion.div>
             </AnimatePresence>
