@@ -1,12 +1,12 @@
 import React from "react";
 
 const CertBody = () => {
-    return <section class="section2">
-        <div class="container has-text-centered">
-            <h1 class="subtitle" id="technologies">Certifications</h1>
-            <div class="columns">
-                <div class="column"><i class="fas fa-network-wired"></i>
-                    <h2 class="subtitle dg">CCNA</h2>
+    return <section className="section2">
+        <div className="container has-text-centered">
+            <h1 className="subtitle" id="technologies">Certifications</h1>
+            <div className="columns">
+                <div className="column"><i className="fas fa-network-wired"></i>
+                    <h2 className="subtitle dg">CCNA</h2>
                     <p>This Cisco certification demonstrates a deep fundamental understanding of networking concepts:</p>
                     <br />
                     <ul>
@@ -18,8 +18,8 @@ const CertBody = () => {
 
                     </ul>
                 </div>
-                <div class="column"><i class="fas fa-laptop"></i>
-                    <h2 class="subtitle dg">CompTIA A+</h2>
+                <div className="column"><i className="fas fa-laptop"></i>
+                    <h2 className="subtitle dg">CompTIA A+</h2>
                     <p>This CompTIA certification demonstrates a deep fundamental understanding of IT concepts:</p>
                     <br />
                     <ul>
@@ -31,8 +31,8 @@ const CertBody = () => {
 
                     </ul>
                 </div>
-                <div class="column"><i class="fas fa-server"></i>
-                    <h2 class="subtitle dg">CompTIA Network+</h2>
+                <div className="column"><i className="fas fa-server"></i>
+                    <h2 className="subtitle dg">CompTIA Network+</h2>
                     <p>This CompTIA certification demonstrates a deep fundamental understanding of Networking concepts:</p>
                     <br />
                     <ul>

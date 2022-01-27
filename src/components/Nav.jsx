@@ -54,17 +54,17 @@ let Nav = () => {
                 <Link className="navbar-item" to="/experience">
                     Work Experience
                 </Link>
-                <a className="navbar-item" href="projects">
+                <Link className="navbar-item" to="/projects">
                     Projects
-                </a>
+                </Link>
             </div>
 
             <div className="navbar-end">
                 <div className="navbar-item">
                     <div className="buttons">
-                        <a href="/contact" className="button is-primary">
+                        <Link to="/contact" className="button is-primary">
                             Contact Me!
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

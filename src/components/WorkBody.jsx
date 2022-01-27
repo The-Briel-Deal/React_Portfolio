@@ -6,7 +6,7 @@ const WorkBody = () => {
             <h1 className="subtitle" id="technologies">Experience</h1>
             <div className="columns">
                 <div className="column"><i className="fas fa-cloud"></i>
-                    <h2 class="subtitle dg">TechOps Engineer</h2>
+                    <h2 className="subtitle dg">TechOps Engineer</h2>
                     <p>Engineer on the Hybrid Cloud Operations Team at GreenPages Technology Solutions</p>
                     <br />
                     <ul>
@@ -20,7 +20,7 @@ const WorkBody = () => {
                     </ul>
                 </div>
                 <div className="column"><i className="fas fa-code"></i>
-                    <h2 class="subtitle dg">Software Programming Instructor</h2>
+                    <h2 className="subtitle dg">Software Programming Instructor</h2>
                     <p>Software Programming Instructor at The Coder School</p>
                     <br />
                     <ul>
@@ -34,13 +34,13 @@ const WorkBody = () => {
                     </ul>
                 </div>
                 <div className="column"><i className="fas fa-server"></i>
-                    <h2 class="subtitle dg">Server Technician</h2>
+                    <h2 className="subtitle dg">Server Technician</h2>
                     <p>Server Technician at Pute.US</p>
                     <br />
                     <ul>
-                        <li> Performed server installation and setup at our client’s facilities in a quick and professionally.</li>
+                        <li>Performed server installation and setup at our client’s facilities in a quick and professionally.</li>
                         <br />
-                        <li> Troubleshooted and resolved issues on Servers, Workstations, Routers, and Printers for our clients.</li>
+                        <li>Troubleshooted and resolved issues on Servers, Workstations, Routers, and Printers for our clients.</li>
                         <br />
                         <li>Imaged and installed all software used by our clients on Workstations, Laptops, and Servers.</li>
                     </ul>
