@@ -6,14 +6,14 @@ import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 import Nav from "./components/Nav";
 import { AnimatePresence } from "framer-motion";
-import { BrowserRouter as Router, Routes, Route, BrowserRouter, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, DefaultRoute, BrowserRouter, useLocation } from "react-router-dom";
 
 const App = () => {
     return <BrowserRouter>
         <Nav />
         <AnimatePresence>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/*" element={<Home />} />
                 <Route path="/credentials" element={<Credentials />} />
                 <Route path="/experience" element={<WorkExperience />} />
                 <Route path="/projects" element={<Projects />} />

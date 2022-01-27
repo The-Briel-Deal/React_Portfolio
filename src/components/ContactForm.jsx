@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 
 const ContactForm = () => {
@@ -7,7 +8,15 @@ const ContactForm = () => {
         message: "",
     })
     const onFormSubmit = () => {
-        console.log({ form })
+        console.log(JSON.stringify(form))
+        fetch("/form",
+            {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(form)
+            })
+        // .then(response => response.json())
+        // .then(data => console.log(data))
     }
 
     const formChanged = (event) => {
