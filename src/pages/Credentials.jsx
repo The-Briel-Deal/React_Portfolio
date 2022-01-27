@@ -1,29 +1,24 @@
 import React from 'react';
-import FA from 'react-fontawesome';
 import AnimatedPage from '../animations/AnimatedPage';
-import Body from '../components/Body';
+import CertBody from '../components/CertBody';
 import Head from '../components/Head';
 
-const titleText = <span>My name is Gabriel.</span>
-const subtitleText = <span>I'm a <strong>software engineer</strong> that loves building things to make life better.</span>
-const ghLink = <a href="https://github.com/The-Briel-Deal" className="social_icon"><FA name="fab fa-github-square" /></a>
-const liLink = <a href="https://www.linkedin.com/in/gabrielford/" className="social_icon"><FA name="fab fa-linkedin-square" /></a>
-const socialBlock = <div className="column">{ghLink}{liLink}</div>
-const avatar = <img id="avatar_of_me" src={require('../assets/avatar.png')} alt="Avatar of me" />
+const titleText = <span>I'm certified.</span>
+const subtitleText = <span>I've aquired the following industry <strong>certifications</strong> in the time I've worked in IT.</span>
+const avatar = <i className="fas fa-stamp"></i>
 
 
-const Home = () => {
+const Credentials = () => {
     return <div>
         <AnimatedPage>
-        <Head
-            titleText={"This is the credentials page"}
-            subtitleText={subtitleText}
-            socialBlock={socialBlock}
-            avatar={avatar}
-        />
-        <Body />
+            <Head
+                titleText={titleText}
+                subtitleText={subtitleText}
+                avatar={avatar}
+            />
+            <CertBody />
         </AnimatedPage>
     </div>
 }
 
-export default Home;
+export default Credentials;

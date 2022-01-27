@@ -1,12 +1,12 @@
 import React from 'react';
 
-let Body = (props) => {
+let HomeBody = (props) => {
     return <section className="section2">
         <div className="container has-text-centered">
             <h1 className="subtitle" id="technologies">Technologies</h1>
             <div className="columns">
                 <div className="column"><i className="fab fa-python"></i>
-                    <p>My knowledge in Python is not only very vast and goes very deep, some Libraries I have built things with include:</p>
+                    <p>I've worked with the following python Libraries I have built things with include:</p>
                     <br />
                     <ul>
                         <li>Django</li>
@@ -68,4 +68,4 @@ let Body = (props) => {
 
     </section>
 }
-export default Body
+export default HomeBody

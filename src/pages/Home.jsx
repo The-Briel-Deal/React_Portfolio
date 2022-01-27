@@ -1,6 +1,6 @@
 import React from 'react';
 import FA from 'react-fontawesome';
-import Body from '../components/Body';
+import HomeBody from '../components/HomeBody';
 import Head from '../components/Head';
 import AnimatedPage from '../animations/AnimatedPage'
 
@@ -15,13 +15,13 @@ const avatar = <img id="avatar_of_me" src={require('../assets/avatar.png')} alt=
 const Home = () => {
     return <div>
         <AnimatedPage>
-        <Head
-            titleText={titleText}
-            subtitleText={subtitleText}
-            socialBlock={socialBlock}
-            avatar={avatar}
-        />
-        <Body />
+            <Head
+                titleText={titleText}
+                subtitleText={subtitleText}
+                socialBlock={socialBlock}
+                avatar={avatar}
+            />
+            <HomeBody />
         </AnimatedPage>
     </div>
 }

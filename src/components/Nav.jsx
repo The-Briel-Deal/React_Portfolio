@@ -9,17 +9,17 @@ let Nav = () => {
     }
     return (<nav className="navbar is-dark is-transparent is-active" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-            <Link to="/" style={{display: "flex", justifyContent: "center"}}>
-            <motion.div
-                whileHover={{ scale: 1.4, rotate: 15 }}
-                whileTap={{ scale: 0.9, rotate: 5 }}
-                className="navbar-item"
-                style={buttonStyle}
-                href="/">
-                
+            <Link to="/" style={{ display: "flex", justifyContent: "center" }}>
+                <motion.div
+                    whileHover={{ scale: 1.4, rotate: 15 }}
+                    whileTap={{ scale: 0.9, rotate: 5 }}
+                    className="navbar-item"
+                    style={buttonStyle}
+                    href="/">
 
-                <img src={require('../assets/LogoNoText.png')} alt="FordLTC Logo" />
-            </motion.div>
+
+                    <img src={require('../assets/LogoNoText.png')} alt="FordLTC Logo" />
+                </motion.div>
             </Link>
 
             <motion.button
@@ -51,9 +51,9 @@ let Nav = () => {
                 <Link className="navbar-item" to="/credentials">
                     Credentials
                 </Link>
-                <a className="navbar-item" href="work_experience">
+                <Link className="navbar-item" to="/experience">
                     Work Experience
-                </a>
+                </Link>
                 <a className="navbar-item" href="projects">
                     Projects
                 </a>
