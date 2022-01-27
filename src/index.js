@@ -4,7 +4,8 @@ import './styles/index.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from "./pages/Home";
 import App from "./App";
-
+import Credentials from "./pages/Credentials";
+import Nav from "./components/Nav"
 // const Credentials = () => {
 //     return <div>
 //         <DrawMain

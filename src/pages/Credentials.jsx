@@ -1,8 +1,8 @@
 import React from 'react';
 import FA from 'react-fontawesome';
+import AnimatedPage from '../animations/AnimatedPage';
 import Body from '../components/Body';
 import Head from '../components/Head';
-import AnimatedPage from '../animations/AnimatedPage'
 
 const titleText = <span>My name is Gabriel.</span>
 const subtitleText = <span>I'm a <strong>software engineer</strong> that loves building things to make life better.</span>
@@ -16,7 +16,7 @@ const Home = () => {
     return <div>
         <AnimatedPage>
         <Head
-            titleText={titleText}
+            titleText={"This is the credentials page"}
             subtitleText={subtitleText}
             socialBlock={socialBlock}
             avatar={avatar}
