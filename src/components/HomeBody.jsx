@@ -12,7 +12,7 @@ let HomeBody = (props) => {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ delay: 0, duration: 1 }}><i className="fab fa-python"></i>
-                        <p>I've worked with the following python Libraries I have built things with include:</p>
+                        <p>I've worked with the following python libraries which include:</p>
                         <br />
                         <ul>
                             <li>Django</li>

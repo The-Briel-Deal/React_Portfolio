@@ -1,5 +1,5 @@
 import React from "react";
-
+import motion from "framer-motion";
 const WorkBody = () => {
     return <section className="section2">
         <div className="container has-text-centered">
@@ -33,7 +33,7 @@ const WorkBody = () => {
 
                     </ul>
                 </div>
-                <div className="column"><i className="fas fa-server"></i>
+                <motion.div ><div className="column"><i className="fas fa-server"></i>
                     <h2 className="subtitle dg">Server Technician</h2>
                     <p>Server Technician at Pute.US</p>
                     <br />
@@ -45,6 +45,7 @@ const WorkBody = () => {
                         <li>Imaged and installed all software used by our clients on Workstations, Laptops, and Servers.</li>
                     </ul>
                 </div>
+                </motion.div>
             </div>
         </div>
     </section >
